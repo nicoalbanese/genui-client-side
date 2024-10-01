@@ -1,6 +1,5 @@
 "use client";
 
-import { RandomUser } from "@/components/fetch-some-data";
 import GenUI from "@/components/gen-ui";
 import { JokeComponent } from "@/components/joke-teller";
 import { Weather } from "@/components/weather";
@@ -23,7 +22,7 @@ export default function Chat() {
               <div className="font-bold">{m.role}</div>
               <GenUI
                 toolInvocations={m.toolInvocations}
-                components={{ weather: Weather, jokeTeller: JokeComponent, fetchUser: RandomUser }}
+                components={{ weather: Weather, jokeTeller: JokeComponent }}
                 sendMessage={sendMessage}
               />
               <p>{m.content}</p>

@@ -1,5 +1,6 @@
 import { ToolInvocation } from "ai";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Component = React.ComponentType<any>;
 
 export default function GenUI({
